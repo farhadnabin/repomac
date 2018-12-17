@@ -85,12 +85,12 @@ maturity <- lapply(1:10, getFirstLast5, phenoClean, "Maturity")
 height <- lapply(1:10, getFirstLast5, phenoClean, "Height")
 yield <- lapply(1:10, getFirstLast5, phenoClean, "GrainYield")
 
-tr1boot <- booting[[1]]
-tr1head <- heading[[1]]
-tr1gc <- gc[[1]]
-tr1mat <- maturity[[1]]
-tr1height <- height[[1]]
-tr1yld <- yield[[1]]
+tr1boot <- booting[[2]]
+tr1head <- heading[[2]]
+tr1gc <- gc[[2]]
+tr1mat <- maturity[[2]]
+tr1height <- height[[2]]
+tr1yld <- yield[[2]]
 
 # common in all
 trt <- c(tr1yld[1,], tr1height[1,], tr1mat[1,], tr1gc[1,], tr1boot[1,], tr1head[1,])
